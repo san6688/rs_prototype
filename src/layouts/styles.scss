@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+//general
+$body-background-color: #edeff0;
+$footer-background-color: #fbfcfd;
+//$family-serif: "Merriweather", "Georgia", serif;
+$family-sans-serif : "Montserrat", sans-serif;
+$family-primary : "Montserrat", sans-serif;
+$primary: #405357;
+
+//navbar
+$navbar-item-color: #9C9C9C;
+$navbar-item-hover-color: $primary;
+$navbar-item-active-color: $primary;
+$navbar-background-color: #fbfcfd;
+
+@import "~bulma/bulma.sass";
+
+@import '@creativebulma/bulma-divider';
+
+.has-navItem-background {
+  background-color: $navbar-item-color;
+}
+
+.webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  -o-transition: background-color .2s linear;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+.webkit-scrollbar-thumb {
+  background-color: #9C9C9C;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -o-transition: background-color .2s linear;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+}
+
+::-webkit-scrollbar-thumb {
+  @extend .webkit-scrollbar-thumb;
+}
+
+::-webkit-scrollbar {
+  @extend .webkit-scrollbar;
+}
+
+.image-grid {
+  display: grid;  
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(100px, auto);
+}
+
+@media not screen and (max-width: 600px) {
+  .image-grid .image-item:nth-child(4n) {
+    grid-column-end: span 2;
+  }
+}
+
+.image-item {
+  overflow: hidden;
+}
+
+.image-item--quick-zoom img {  
+  transition: transform calc(.25s * 3) ease
+}
+
+.image-item--quick-zoom:hover img {
+  transform: scale(1.5);
+}
+
+.image-grid img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blurOnHover img{
+  opacity: 1;
+}
+
+.blurOnHover:hover img{
+  opacity: 0.3;
+}

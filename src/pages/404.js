@@ -1,14 +1,20 @@
-import React from "react"
+import React from 'react';
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Layout from '../layouts/layout';
+import SEO from '../components/seo';
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-  </Layout>
-)
 
-export default NotFoundPage
+    <div style={{
+      margin: '0 auto', width: '100%', minHeight: '80vh', textAlign: 'center', paddingTop: 400,
+    }}
+    >
+      <div className="content has-text-centered">
+        <span className="title is-size-2 is-danger">Under Construction !!!</span>
+      </div>
+    </div>
+  </Layout>
+);
+
+export default NotFoundPage;
