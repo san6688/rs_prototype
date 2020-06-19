@@ -11,7 +11,7 @@ const Statistics = (props) => (
     <AnimatedHeader title="Our Facts" showDivider />
     <div style={{ margin: '0 auto', width: '40vw' }}>
       <div className="level">
-        <div className="level-item has-text-centered">
+        <div className="level-item has-text-centered" style={{ marginBottom: 30 }}>
           <Fade left>
             <div>
               <p className="heading">
@@ -24,7 +24,7 @@ const Statistics = (props) => (
             </div>
           </Fade>
         </div>
-        <div className="level-item has-text-centered">
+        <div className="level-item has-text-centered" style={{ marginBottom: 30 }}>
           <Fade>
             <div>
               <p className="heading">
@@ -37,7 +37,7 @@ const Statistics = (props) => (
             </div>
           </Fade>
         </div>
-        <div className="level-item has-text-centered">
+        <div className="level-item has-text-centered" style={{ marginBottom: 30 }}>
           <Fade right>
             <div>
               <p className="heading">

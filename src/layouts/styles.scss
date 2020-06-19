@@ -90,3 +90,11 @@ $navbar-background-color: #fbfcfd;
 .blurOnHover:hover img{
   opacity: 0.3;
 }
+
+.blurOnHover .textOverImage{
+  display: none;
+}
+
+.blurOnHover:hover .textOverImage{
+  display: block;
+}

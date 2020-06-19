@@ -29,7 +29,7 @@ const NavBar = (props) => {
               {
                 menuItems.map((item, index) => (item.isMenu ? (
                   <>
-                    <div className="navbar-item has-dropdown is-hoverable">
+                    <div className="navbar-item has-dropdown is-hoverable" style={{ padding: '8px 12px' }}>
                       <span className="navbar-link is-arrowless is-size-6 has-text-weight-bold is-uppercase" style={{ padding: '0px 10px' }}>{item.title}</span>
                       <div className="navbar-dropdown">
                         {
