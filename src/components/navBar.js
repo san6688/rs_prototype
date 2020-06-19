@@ -17,7 +17,7 @@ const NavBar = (props) => {
             <a className="navbar-item" href="https://bulma.io">
               <img src="https://bulma.io/images/bulma-logo.png" alt="logo" width="112" height="28" />
             </a>
-            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarMenu" onClick={() => setShowBurgerMenu(true)}>
+            <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navBarMenu" onClick={() => setShowBurgerMenu(!showBurgerMenu)}>
               <span aria-hidden="true" />
               <span aria-hidden="true" />
               <span aria-hidden="true" />
